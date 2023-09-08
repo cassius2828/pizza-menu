@@ -1,38 +1,90 @@
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: capitalize;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* h1, h3, h5 , p , span  */
+h1 {
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+h3,
+span {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/*  */
+
+.cards {
+  width: 45%;
+}
+
+.img-container {
+  margin: 1.5rem 0;
+}
+
+.img-container,
+.details {
+  display: flex;
+  width: 50%;
+}
+
+.pizza-img {
+  object-fit: cover;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 80vw;
+  flex-wrap: wrap;
+
+  margin-top: 2rem;
+}
+
+.details {
+  flex-direction: column;
+  padding: 1rem 0.6rem;
+}
+
+.details p,
+.details h5 {
+  margin: 1rem 0;
+}
+
+.sold-out {
+  text-decoration: line-through;
+  filter: saturate(0%);
+}
+
+/*
+h5 p span
+*/
+
+/* ! MEDIA QUERIES SM DEVICES */
+
+@media (max-width: 500px) {
+  .cards {
+    width: 100%;
+    padding: 1rem;
   }
 }

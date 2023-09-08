@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import tachyons from "tachyons";
+import { Cards } from "./components/Cards";
+import { pizzaData } from "./data";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>- fast react pizza co. -</h1>
+      <div className="our-menu">
+        <hr></hr>
+        <h3>our menu</h3>
+        <hr></hr>
+      </div>
+      <div>
+        <p className="bold"></p>
+        <div className="card-container">
+          {pizzaData.map((i) => {
+           return <Cards
+              image={i.photoName}
+              name={i.name}
+              ingredients={i.ingredients}
+              price={i.price}
+              isSoldOut={i.soldOut}
+            />;
+          })}
+        </div>
+      </div>
+      <footer></footer>
     </div>
   );
 }
