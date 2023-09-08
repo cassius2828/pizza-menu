@@ -28,7 +28,11 @@ function App() {
           })}
         </div>
       </div>
-      <footer></footer>
+      <footer className="mt5 mb5">
+        <p className="tc">We are open until 10:00pm. Come visit us now or order online</p>
+
+        <button className="mt3">Order</button>
+      </footer>
     </div>
   );
 }

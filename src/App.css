@@ -63,6 +63,7 @@ p {
 
 .details {
   flex-direction: column;
+  justify-content: center;
   padding: 1rem 0.6rem;
 }
 
@@ -70,6 +71,28 @@ p {
 .details h5 {
   margin: 1rem 0;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+button {
+width: 10rem;
+height: 3rem;
+text-transform: uppercase;
+background-color: rgb(234, 234, 55);
+}
+
+button:hover {
+  cursor: pointer;
+  filter: saturate(90%);
+}
+
+/* state */
 
 .sold-out {
   text-decoration: line-through;
